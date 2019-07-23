@@ -1,0 +1,34 @@
+Reset root password
+https://www.howtoforge.com/setting-changing-resetting-mysql-root-passwords
+
+Stop service
+/etc/init.d/mysql stop
+You can use mysql workbench using system preference in Mac
+
+mysqld_safe --skip-grant-tables &
+
+Open another terminal prompt
+mysql -u root
+
+mysql> use mysql;
+mysql> update user set authentication_string=password('root') where user='root';
+mysql> flush privileges;
+mysql> quit
+
+Log back in
+mysql -u root -p
+Enter password: root
+
+
+mysql> UPDATE mysql.user SET Password=PASSWORD('your_new_password') 
+       WHERE User='root'; 
+ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.
+mysql> SET PASSWORD = PASSWORD('your_new_password');
+
+
+
+
+https://coolestguidesontheplanet.com/start-stop-mysql-from-the-command-line-terminal-osx-linux/
+ sudo /usr/local/mysql/support-files/mysql.server start
+ sudo /usr/local/mysql/support-files/mysql.server stop
+ sudo /usr/local/mysql/support-files/mysql.server restart

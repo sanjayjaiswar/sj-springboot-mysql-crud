@@ -1,0 +1,7 @@
+Build
+cd childcarereview/ChildCareReview_Backend/web
+./gradlew clean build
+
+Execute  
+cd childcarereview/ChildCareReview_Backend/web/build/libs
+java -jar childcarereview-1.0.jar
