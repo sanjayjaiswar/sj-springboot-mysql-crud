@@ -1,0 +1,88 @@
+{
+  "createdAt": "2018-07-01T02:00:46.412Z",
+  "version": "10.0.12",
+  "kind": "ARC#AllDataExport",
+  "requests": [
+    {
+      "type": "saved",
+      "headers": "",
+      "method": "GET",
+      "name": "getEntity",
+      "payload": "",
+      "url": "http://127.0.0.1:8090/backendapp/backend/2",
+      "updated": 1530410345286,
+      "_referenceLegacyProject": "b89228fd-630c-4a4a-8592-5334b0c64d8f",
+      "kind": "ARC#RequestData"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:8090/backendapp/backend/save",
+      "payload": "{\"entityId\":\"2\",\"entityName\":\"Entity2\",\"createdAt\":\"2017-02-07 22:23:28\",\"modifiedAt\":\"2017-02-07 22:23:28\"}",
+      "headers": "Content-Type: application/json",
+      "name": "saveEntity",
+      "type": "saved",
+      "updated": 1530410321348,
+      "_referenceLegacyProject": "b89228fd-630c-4a4a-8592-5334b0c64d8f",
+      "kind": "ARC#RequestData"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Entity",
+      "order": 0,
+      "created": 1530410321320,
+      "updated": 1530410321320,
+      "_referenceId": "b89228fd-630c-4a4a-8592-5334b0c64d8f",
+      "kind": "ARC#ProjectData"
+    }
+  ],
+  "history": [
+    {
+      "created": 1530410126422,
+      "updated": 1530410126422,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://127.0.0.1:8090/backendapp/backend/1",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1530410330627,
+      "updated": 1530410330627,
+      "headers": "",
+      "method": "GET",
+      "payload": "",
+      "url": "http://127.0.0.1:8090/backendapp/backend/2",
+      "kind": "ARC#HistoryData"
+    },
+    {
+      "created": 1530410202569,
+      "updated": 1530410260172,
+      "headers": "content-type: application/json",
+      "method": "POST",
+      "payload": "{\"entityId\":\"2\",\"entityName\":\"Entity2\",\"createdAt\":\"2017-02-07 22:23:28\",\"modifiedAt\":\"2017-02-07 22:23:28\"}",
+      "url": "http://127.0.0.1:8090/backendapp/backend/save",
+      "kind": "ARC#HistoryData"
+    }
+  ],
+  "url-history": [
+    {
+      "cnt": 1,
+      "time": 1530410126421,
+      "key": "http://127.0.0.1:8090/backendapp/backend/1",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 1,
+      "time": 1530410330626,
+      "key": "http://127.0.0.1:8090/backendapp/backend/2",
+      "kind": "ARC#UrlHistoryData"
+    },
+    {
+      "cnt": 3,
+      "time": 1530410260172,
+      "key": "http://127.0.0.1:8090/backendapp/backend/save",
+      "kind": "ARC#UrlHistoryData"
+    }
+  ]
+}
