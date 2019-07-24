@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# I want to make sure that the directory is clean and has nothing left over from
+# previous deployments. The servers auto scale so the directory may or may not
+# exist.
+if [ -f /var/www/html/index.html ]; then
+    rm -rf /var/www/html/index.html
+fi
