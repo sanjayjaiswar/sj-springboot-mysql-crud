@@ -1,12 +1,17 @@
 version: 0.2
 
+env:
+  variables:
+    GRADLE_HOME: "/opt/gradle/gradle-5.2.1"
+    
 phases:
   install:
     runtime-versions:
       java: openjdk8
     commands:
       - apt-get update -y
-      - apt-get install -y gradle
+      - wget https://services.gradle.org/distributions/gradle-5.2.1-bin.zip -P /tmp
+      - unzip -d /opt/gradle /tmp/gradle-*.zip
 
   pre_build:
     commands:
@@ -20,4 +25,4 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/libs/backendapp-1.0.jar
+    - build/libs/backendapp-1.0.jar  
