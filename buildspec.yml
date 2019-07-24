@@ -9,7 +9,6 @@ phases:
     runtime-versions:
       java: openjdk8
     commands:
-      - apt-get update -y
       - apt-get install tree
       - wget https://services.gradle.org/distributions/gradle-5.2.1-bin.zip -P /tmp
       - unzip -d /opt/gradle /tmp/gradle-*.zip
@@ -20,8 +19,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - cd web
-      - gradlew build -d
+      - web/gradlew build -d
       - ls -al web/build/libs
       - tree web
   post_build:
