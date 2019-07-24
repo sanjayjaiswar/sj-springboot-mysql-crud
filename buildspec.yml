@@ -19,7 +19,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - web/gradlew build
+      - web/gradlew build -d
+      - ls -al web/build/libs
   post_build:
     commands:
       - echo Build completed on `date`
