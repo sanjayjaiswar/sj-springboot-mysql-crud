@@ -23,6 +23,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
+	println("jar.destinationDir = " + destinationDir)
 	baseName = "backendapp"
 	version = "1.0"
 }
