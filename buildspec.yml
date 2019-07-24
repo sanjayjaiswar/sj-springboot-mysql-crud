@@ -19,10 +19,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - gradlew build
+      - web/gradlew build
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/libs/backendapp-1.0.jar  
+    - web/build/libs/backendapp-1.0.jar
