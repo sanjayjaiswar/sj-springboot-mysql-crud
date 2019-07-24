@@ -20,7 +20,7 @@ phases:
     commands:
       - echo Build started on `date`
       - cd web
-      - gradlew build -s
+      - ./gradlew build -s
       - tree .
   post_build:
     commands:
