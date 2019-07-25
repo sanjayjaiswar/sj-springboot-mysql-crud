@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo 'Starting Spring Boot app'
-java -jar /home/ec2-user/web/build/libs/backendapp-1.0.jar >applog.out 2>applog.err &
+nohup java -jar /home/ec2-user/web/build/libs/backendapp-1.0.jar > /var/log/app_server_out.log 2>/var/log/app_server_err.log &

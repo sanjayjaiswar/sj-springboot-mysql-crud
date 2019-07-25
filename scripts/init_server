@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo 'Creating log files'
+touch /var/log/app_server_out.log
+touch /var/log/app_server_err.log
+chown ec2-user /var/log/app_server_out.log
+chown ec2-user /var/log/app_server_err.log
