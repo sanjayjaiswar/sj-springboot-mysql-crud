@@ -5,5 +5,5 @@ files:
     destination: /home/ec2-user
 hooks:
   ApplicationStart:
-    - location: start_server
+    - location: scripts/start_server
       runas: ubuntu
