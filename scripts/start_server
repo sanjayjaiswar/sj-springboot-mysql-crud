@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 echo 'Starting Spring Boot app'
-cd '/home/ubuntu/sj-springboot-mysql-crud'
 java -jar backendapp-1.0.jar

@@ -1,9 +1,0 @@
-version: 0.0
-os: linux
-files:
-  - source: ./
-    destination: /home/ubuntu/sj-springboot-mysql-crud
-hooks:
-  ApplicationStart:
-    - location: start_server.sh
-      runas: ubuntu
