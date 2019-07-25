@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: ./
-    destination: /home/ubuntu/sj-springboot-mysql-crud
+    destination: /home/ec2-user/backendapp-1.0.jar
 hooks:
   ApplicationStart:
     - location: start_server.sh

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo 'Starting Spring Boot app'
-java -jar backendapp-1.0.jar
+java -jar web/build/libs/backendapp-1.0.jar
