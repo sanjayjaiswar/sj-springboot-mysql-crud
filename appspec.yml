@@ -2,8 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: ./
-    destination: /home/ec2-user/backendapp-1.0.jar
+    destination: /home/ec2-user
 hooks:
   ApplicationStart:
-    - location: start_server.sh
+    - location: start_server
       runas: ubuntu
