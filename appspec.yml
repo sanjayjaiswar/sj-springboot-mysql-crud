@@ -1,9 +1,6 @@
 version: 0.0
 os: linux
-files:
-  - source: ./
-    destination: /home/ec2-user
 hooks:
   ApplicationStart:
-    - location: /home/ec2-user/scripts/start_server
+    - location: scripts/start_server
       runas: ec2-user
