@@ -1,4 +1,4 @@
-Backend with Springboot & MySQL
+Backend with Springboot & MySQL - Blue Green Deployment with AWS CodePipeline 
 ===================================
 
 Pre-requisites
