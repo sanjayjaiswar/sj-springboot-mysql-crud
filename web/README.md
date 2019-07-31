@@ -83,6 +83,4 @@ Intellij may have issues with POJO lombok processing. Enable Annotation Processi
 If getting caching_sha2_password error,
 java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.
 Login mysql with root & alter user to use native password
-ALTER USER 'sanjay'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
- 
-        
+ALTER USER 'sanjay'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';        
